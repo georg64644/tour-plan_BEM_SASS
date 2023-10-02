@@ -333,7 +333,7 @@ template {
   padding-bottom: 40px;
 }
 .header__search {
-  margin: auto;
+  margin-right: auto;
   margin-left: 108px;
 }
 
