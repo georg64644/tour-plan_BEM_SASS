@@ -86,8 +86,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -322,19 +321,25 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   background-color: #fff;
 }
-.header-top {
+.navbar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
+}
+.navbar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .search {
@@ -378,8 +383,7 @@ template {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .user__name {
   font-size: 14px;
