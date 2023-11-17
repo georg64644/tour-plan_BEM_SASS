@@ -1,0 +1,20 @@
+.bredcrumb
+    &-list
+        display: flex
+        align-items: center
+        padding: 18px 0
+        margin: 0
+        // Убираем точки в списке
+        list-style-type: none
+        &__item
+            font-size: 10px
+            line-height: 13px
+            // Устанавливаем флеш / после каждого элемента,кроме последнего
+            &:not(:last-child)
+                &::after
+                    content: '/'
+                    margin-right: 4px
+        &__link
+            // Отключаем подчёркивание текста у ссылок
+            text-decoration: none
+            color: inherit
