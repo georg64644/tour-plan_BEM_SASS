@@ -1,10 +1,10 @@
-const swiper = new Swiper('.swiper', {
+const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
     loop: true,
    // Управление кнопками на слайде через клик мыши
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
   // Подключение клавиатуры
   keyboard: {
@@ -18,3 +18,11 @@ const swiper = new Swiper('.swiper', {
   // perSlideRotate: "9",
   
 });
+const reviewsSlider = new Swiper('.reviews-slider', {
+      loop: true,
+   // Управление кнопками на слайде через клик мыши
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+  });
