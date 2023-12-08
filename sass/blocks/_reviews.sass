@@ -14,27 +14,28 @@
             display: flex
             flex-direction: column
             align-items: center
-            width: 730px
+            max-width: 730px
             margin: 45px auto 0
             background-color: #fff
             border-radius: 8px
             padding: 0 62px 30px
             &:before
+                content: ''
                 position: absolute
                 left: 62px
                 top: 13px
                 width: 70px
                 height: 47px
-                content: ''
                 background-image: url(../img/quote-left.svg)
                 background-repeat: no-repeat
+                z-index: 1
             &:after
+                content: ''
                 position: absolute
                 right: 62px
                 top: 118px
                 width: 70px
                 height: 47px
-                content: ''
                 background-image: url(../img/quote-right.svg)
                 background-repeat: no-repeat
         &__button
@@ -81,8 +82,7 @@
             font-size: 10px
             font-style: normal
             font-weight: 400
-            line-height: normal
-            // text-align: center
+            line-height: 13px
             margin-bottom: 4px
         &__rating
             display: flex
