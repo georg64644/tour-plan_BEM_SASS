@@ -20,6 +20,7 @@ const hotelSlider = new Swiper('.hotel-slider', {
 });
 const reviewsSlider = new Swiper('.reviews-slider', {
       loop: true,
+      autoHeight: true,
    // Управление кнопками на слайде через клик мыши
   navigation: {
     nextEl: '.reviews-slider__button--next',
