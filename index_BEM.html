@@ -435,7 +435,7 @@
         </section>
         <!-- /.activities -->
         <footer class="footer">
-            <div class="container">
+            <div class="container footer__container">
                 <div class="footer-wrapper">
                     <img src="./img/vartical-logo.svg" alt="Best tour plan" class="logo footer__logo"></img>
                     <div class="footer__list footer__categories">
@@ -473,7 +473,7 @@
                         </div>
                     </div>
                     <!-- /.footer__social-network -->
-                    <div class="footer__list footer_legal">
+                    <div class="footer__list footer__legal">
                         <h3 class="footer__title">LEGAL INFORMATION</h3>
                         <ul class="footer__ul">
                             <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
@@ -511,8 +511,11 @@
                             <input type="text" class="input footer__input"placeholder="Your Full Name*"/>
                             <input type="text" class="input footer__input"placeholder="Phone Number*"/>
                             <textarea cols="30" rows="10" placeholder="Message" class="footer__message"></textarea>
-                            <button class="button footer__button" type="submit">Send</button>
-                            <span class="footer__info">* Required Fields</span>
+                            <div class="button-wrapper">
+                               <button class="button footer__button" type="submit">Send</button>
+                               <span class="footer__info">* Required Fields</span> 
+                            </div>
+                            <!-- /.button-wrapper -->                            
                         </form>
                     </div>
                     <!-- /.footer__contact-form -->
