@@ -7,7 +7,9 @@
         grid-template-columns: repeat(4, minmax(min-content, 1fr))
         grid-gap: 10px
         grid-auto-rows: minmax(40px, min-content)
+        position: relative
         align-items: start
+        position: relative
     &__logo
         width: 166px
         align-self: stretch
@@ -106,7 +108,26 @@
         font-style: normal
         font-weight: 700
         line-height: 15px
-        color: #E0E0E0        
+        color: #E0E0E0
+    &__bottom
+        &--link-2
+            max-width: 290px
+            grid-column: 2 / 4
+            margin-top: 102px
+            margin-left: 160px
+            font-size: 12px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            justify-self: center
+        &--conditions
+            text-decoration: none
+            color: inherit
+    &__sponsor
+        grid-column: 4 / 5
+        margin-top: 102px
+        justify-self: end
+
 .button-wrapper
     width: 100%
     display: flex
