@@ -23,6 +23,10 @@
         align-items: center
         justify-content: space-between
         color: $lighte
+        &__item
+            &--mobile
+                &--visible
+                    display: none
         &__link
             // Определяем что элементы должны взять свойство родителя
             color: inherit
@@ -31,7 +35,7 @@
             // Шрифт ссылок пишем заглавными буквами
             text-transform: uppercase
             font-size: 14px
-            line-height: 18px
+            line-height: 18px    
 .logo
     width: 177px
 .search
@@ -75,3 +79,4 @@
         font-size: 14px
         color: $text-color
         margin-left: 18px
+
